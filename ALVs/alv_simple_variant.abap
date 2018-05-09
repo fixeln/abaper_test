@@ -24,6 +24,6 @@ ENDTRY.
 go_alv_grid->get_functions( )->set_all( abap_true ).
 gs_layout_key-report = sy-repid.
 go_alv_grid->get_layout( )->set_key( gs_layout_key ).
-*go_alv_grid->get_layout( )->set_save_restriction( if_salv_c_layout=>restrict_none ).
+go_alv_grid->get_layout( )->set_save_restriction( if_salv_c_layout=>restrict_none ).
 
 go_alv_grid->display( ).
